@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Login Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/h8k-design@latest/dist/index.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/h8k-components/dist/h8k-components/h8k-components.esm.js"
+            type="module"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/h8k-components/dist/h8k-components/h8k-components.js"></script>
+</head>
+<body>
+<h8k-navbar header="Login Form"></h8k-navbar>
+<div class="card w-50 mx-auto mt-50">
+    <h4 align="center" class="text-center pt-20">Fill your credentials</h4>
+    <section class="card-text">
+        <form action="/j_security_check" class="layout-column align-items-stretch mx-16" method="post">
+            <label class="form-hint" for="name">Username</label>
+            <input class="large" id="name" name="j_username" type="text">
+
+            <label class="form-hint mt-16" for="pass">Password</label>
+            <input class="large" id="pass" name="j_password" type="text">
+
+            <section class="card-actions">
+                <button type="submit" value="Login">Login</button>
+            </section>
+        </form>
+    </section>
+</div>
+</body>
+</html>
